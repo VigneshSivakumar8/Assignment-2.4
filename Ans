@@ -1,0 +1,32 @@
+Hadoop in Layman's Term :
+        In layman's words Hadoop can be classified briefly into two components;one based on its storage(HDFS) and the other based on
+        processing(Mapreduce).
+      1.Hadoop Distributed File System (HDFS) :-
+                       The default big data storage layer for Apache Hadoop is HDFS. HDFS is the “Secret Sauce” of Apache Hadoop components
+                 as users can dump huge datasets into HDFS and the data will sit there nicely until the user wants to leverage it for
+                 analysis. HDFS component creates several replicas of the data block to be distributed across different clusters for 
+                 reliable and quick data access. HDFS comprises of 3 important components-NameNode, DataNode and Secondary NameNode. HDFS 
+                 operates on a Master-Slave architecture model where the NameNode acts as the master node for keeping a track of the 
+                 storage cluster and the DataNode acts as a slave node summing up to the various systems within a Hadoop cluster.    
+      2.MapReduce- Distributed Data Processing Framework of Apache Hadoop :-
+                       MapReduce is a Java-based system created by Google where the actual data from the HDFS store gets processed 
+                 efficiently. MapReduce breaks down a big data processing job into smaller tasks. MapReduce is responsible for the 
+                 analysing large datasets in parallel before reducing it to find the results. In the Hadoop ecosystem, Hadoop MapReduce is
+                 a framework based on YARN architecture. YARN based Hadoop architecture, supports parallel processing of huge data sets and
+                 MapReduce provides the framework for easily writing applications on thousands of nodes, considering fault and failure 
+                 management.
+                       The basic principle of operation behind MapReduce is that the “Map” job sends a query for processing to various 
+                 nodes in a Hadoop cluster and the “Reduce” job collects all the results to output into a single value. Map Task in the
+                 Hadoop ecosystem takes input data and splits into independent chunks and output of this task will be the input for 
+                 Reduce Task. In The same Hadoop ecosystem Reduce task combines Mapped data tuples into smaller set of tuples. Meanwhile, 
+                 both input and output of tasks are stored in a file system. MapReduce takes care of scheduling jobs, monitoring jobs and 
+                 re-executes the failed task.
+                       MapReduce framework forms the compute node while the HDFS file system forms the data node. Typically in the Hadoop
+                 ecosystem architecture both data node and compute node are considered to be the same.   
+      3.Pig :-
+                 Apache Pig is a convenient tools developed by Yahoo for analysing huge data sets efficiently and easily. It provides a 
+                 high level data flow language Pig Latin that is optimized, extensible and easy to use. The most outstanding feature of 
+                 Pig programs is that their structure is open to considerable parallelization making it easy for handling large data sets. 
+      4.Hive :-
+                 Hike developed by Facebook is a data warehouse built on top of Hadoop and provides a simple language known as HiveQL 
+                 similar to SQL for querying, data summarization and analysis. Hive makes querying faster through indexing. 
